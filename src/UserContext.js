@@ -7,7 +7,7 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const client = new Client({
-    pathPrefix: "/https://bewildered-pig-ring.cyclic.app/webauthn",
+    pathPrefix: "https://bewildered-pig-ring.cyclic.app/webauthn",
   });
 
   const register = async (username) => {
