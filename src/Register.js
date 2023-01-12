@@ -16,6 +16,7 @@ export default function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     const res = await register(username);
+    setResData(res);
   };
 
   useEffect(() => {
