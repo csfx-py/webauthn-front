@@ -127,6 +127,7 @@ export default function Register() {
             </Grid>
           )}
         </AnimatePresence>
+        {JSON.stringify(resData)}
         {resData && <pre>{JSON.stringify(resData, null, 2)}</pre>}
       </Paper>
     </Container>
