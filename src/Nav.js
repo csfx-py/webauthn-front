@@ -16,8 +16,9 @@ import AvatarImage from "./Assets/Thinking face-cuate.svg";
 
 export default function Nav() {
   const [user, setUser] = useState(null);
-
   const [anchorElUser, setAnchorElUser] = useState(null);
+
+  const logout = () => {};
 
   const settings = [
     {
@@ -43,10 +44,12 @@ export default function Nav() {
       position="sticky"
       sx={{
         zIndex: 99,
-        backdropFilter: "blur(10px)",
+        backdropFilter: "blur(6px)",
         background: "rgba(255, 255, 255, 0.2)",
         borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
-        color: "#fff",
+        color: "#000",
+        boxShadow:
+          "0px 2px 2px -1px rgba(0,0,0,0.2),0px 1px 5px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12)",
       }}
     >
       <Container maxWidth="xl">
