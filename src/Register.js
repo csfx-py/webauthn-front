@@ -11,6 +11,8 @@ export default function Register() {
   const [support, setSupport] = useState(null);
   const [username, setUsername] = useState("");
 
+  const [resData, setResData] = useState("");
+
   const handleRegister = async (e) => {
     e.preventDefault();
     const res = await register(username);
@@ -124,6 +126,7 @@ export default function Register() {
             </Grid>
           )}
         </AnimatePresence>
+        {resData && <pre>{JSON.stringify(resData, null, 2)}</pre>}
       </Paper>
     </Container>
   );

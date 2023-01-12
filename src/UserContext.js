@@ -15,7 +15,7 @@ export const UserProvider = ({ children }) => {
       username,
       name: username,
     });
-    console.log(res);
+    return res;
   };
 
   const login = () => {};
