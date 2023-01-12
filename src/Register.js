@@ -127,7 +127,9 @@ export default function Register() {
             </Grid>
           )}
         </AnimatePresence>
-        {JSON.stringify(resData)}
+        <Typography variant="h4" component="h4" gutterBottom>
+          {JSON.stringify(resData)}
+        </Typography>
         {resData && <pre>{JSON.stringify(resData, null, 2)}</pre>}
       </Paper>
     </Container>
